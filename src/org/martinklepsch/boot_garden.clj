@@ -18,7 +18,7 @@
        pod/make-pod))
 
 (defonce garden-pods
-  (pod/pod-pool (add-dep (boot/get-env) '[garden "1.3.2"])
+  (pod/pod-pool (add-dep (boot/get-env) '[garden "1.3.3-SNAPSHOT"])
                 :init (fn [pod] (pod/require-in pod 'garden.core))))
 
 (deftask garden
